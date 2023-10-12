@@ -1,0 +1,89 @@
+body{   font-family: 'Big Shoulders Display', sans-serif ;
+        font-family: 'Lexend Deca', sans-serif ;
+        height: 90vh;
+        background-color: hsl(0, 0%, 95%);
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+*{box-sizing: border-box;}
+
+.container{ display: flex;
+            width: 900px;
+            height: 480px;
+            border-radius: 10px;}
+
+.sedan{ display: flex;
+        flex-direction: column;
+        background-color: hsl(31, 77%, 52%);
+        width: 300px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        justify-content: space-around;
+        padding: 40px 40px;}
+
+.title-sedan{   font-family: 'Big Shoulders Display', sans-serif ;}
+
+h1{ color: hsl(0, 0%, 95%);
+    font-size: 2.5em;
+    text-transform: uppercase;}
+
+p{  color: hsl(0, 1%, 86%);}
+
+.paragraph-sedan{   position: relative;
+                    top: -40px;}
+
+button{ background-color: hsl(0, 0%, 95%);
+        width: 65%;
+        border-radius: 30px;
+        border: none;
+        color: hsl(31, 77%, 52%);}
+
+h4{ margin: 13px;
+    font-weight: bolder;}
+
+.suvs{  display: flex;
+        flex-direction: column;
+        background-color: hsl(184, 100%, 22%);
+        width: 300px;
+        justify-content: space-around;
+        padding: 40px 40px;}
+
+.title-suvs{    font-family: 'Big Shoulders Display', sans-serif;}
+
+.paragraph-suvs{    position: relative;
+                    top: -40px;}
+
+.suvs h4 {  color: hsl(184, 100%, 22%);}
+
+.luxury{    display: flex;
+            flex-direction: column;
+            background-color: hsl(179, 100%, 13%);
+            width: 300px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            justify-content: space-around;
+            padding: 40px 40px;}
+
+.title-luxury{  font-family: 'Big Shoulders Display', sans-serif;}
+
+.paragraph-luxury{  position: relative;
+                    top: -40px;}
+
+.luxury h4{ color: hsl(179, 100%, 13%);}
+
+@media(max-width:900px)
+{
+    body{   align-items: flex-start;
+            margin: 0;}
+
+    .container{ flex-direction: column;
+                width: 300px;}
+
+    .sedan{ border-bottom-left-radius: 0px;
+            border-top-right-radius: 10px;}
+
+    .luxury{    border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;}  
+}
+            
